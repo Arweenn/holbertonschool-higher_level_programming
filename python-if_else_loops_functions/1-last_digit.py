@@ -18,4 +18,3 @@ if last == 0:
 
 if last < 6 and last != 0:
     print(f"{str} {number} is {last} and is less than 6 and not 0")
-    
