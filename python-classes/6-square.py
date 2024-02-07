@@ -34,6 +34,16 @@ class Square:
         else:
             self.__size = value
 
+    def my_print(self):
+
+        if self.__size == 0:
+            print()
+            return
+        print("\n" * self.__position[1], end="")
+        for i in range(self.__size):  # type: ignore
+            print("_" * self.__position[0], end="")
+            print("#" * self.__size)  # type: ignore
+
     @property
     def position(self):
 
@@ -50,13 +60,3 @@ class Square:
                 if isinstance(x, int):
                     raise TypeError("{str}")
         self.__position = value
-
-    def my_print(self):
-
-        if self.__size == 0:
-            print()
-            return
-        print("\n" * self.__position[1], end="")
-        for i in range(self.__size):  # type: ignore
-            print("_" * self.__position[0], end="")
-            print("#" * self.__size)  # type: ignore
