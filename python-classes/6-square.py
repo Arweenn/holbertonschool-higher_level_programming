@@ -44,7 +44,7 @@ class Square:
             return
         print("\n" * self.__position[1], end="")
         for i in range(self.__size):  # type: ignore
-            print("_" * self.__position[0], end="")
+            print(" " * self.__position[0], end="")
             print("#" * self.__size)  # type: ignore
 
     @property
