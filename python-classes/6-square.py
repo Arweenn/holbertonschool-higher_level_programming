@@ -1,18 +1,37 @@
 #!/usr/bin/python3
-"define a square"
+"""This module defines a class representing a square.
+
+Raises
+------
+TypeError
+    If the size provided is not an integer.
+ValueError
+    If the size provided is less than zero.
+Returns
+-------
+int
+    The area of the square.
+tuple
+    The position of the square's top-left corner.
+Attributes
+----------
+size : int
+    The size of the square's sides.
+position : tuple of int
+    The position of the square's top-left corner.
+"""
 
 
 class Square:
-    "defining a square"
-
-    __size = None
+    """defining a square"""
 
     @property
     def size(self):
+
         return self.__size
 
     def __init__(self, __size=0, __position=(0, 0)):
-        "initialize a square"
+        """Initialize a square."""
 
         if not isinstance(__size, int):
             raise TypeError("size must be an integer")
@@ -29,13 +48,13 @@ class Square:
             self.__position = __position
 
     def area(self):
-        "returns the square area"
+        """returns the square area"""
 
         return self.__size * self.__size  # type: ignore
 
     @size.setter
     def size(self, position):
-        "getter func for size"
+        """getter func for size"""
 
         if not isinstance(position, int):
             raise TypeError("size must be an integer")
@@ -45,7 +64,7 @@ class Square:
             self.__size = position
 
     def my_print(self):
-        "increment my_print func"
+        """increment my_print func"""
 
         if self.__size == 0:
             print()
@@ -57,13 +76,13 @@ class Square:
 
     @property
     def position(self):
-        "define position"
+        """define position"""
 
         return self.__position
 
     @position.setter
     def position(self, position):
-        "setter for position property"
+        """setter for position property"""
 
         if not isinstance(position, tuple) or len(position) != 2:
             for x in position:
