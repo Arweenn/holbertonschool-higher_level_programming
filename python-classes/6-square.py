@@ -53,15 +53,15 @@ class Square:
         return self.__size * self.__size  # type: ignore
 
     @size.setter
-    def size(self, position):
+    def size(self, value):
         """getter func for size"""
 
-        if not isinstance(position, int):
+        if not isinstance(value, int):
             raise TypeError("size must be an integer")
-        elif position < 0:
+        elif value < 0:
             raise ValueError("size must be >= 0")
         else:
-            self.__size = position
+            self.__size = value
 
     def my_print(self):
         """increment my_print func"""
@@ -81,13 +81,13 @@ class Square:
         return self.__position
 
     @position.setter
-    def position(self, position):
+    def position(self, value):
         """setter for position property"""
 
-        if not isinstance(position, tuple) or len(position) != 2:
-            for x in position:
+        if not isinstance(value, tuple) or len(value) != 2:
+            for x in value:
                 if not isinstance(x, int):
                     if x < 0:
                         raise TypeError("position must be a tuple \
                             of 2 positive integers")
-        self.__position = position
+        self.__position = value
