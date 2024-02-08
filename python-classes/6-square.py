@@ -25,11 +25,6 @@ position : tuple of int
 class Square:
     """defining a square"""
 
-    @property
-    def size(self):
-
-        return self.__size
-
     def __init__(self, __size=0, __position=(0, 0)):
         """Initialize a square."""
 
@@ -46,6 +41,11 @@ class Square:
                             raise TypeError("position must be a tuple \
                                 of 2 positive integers")
             self.__position = __position
+
+    @property
+    def size(self):
+
+        return self.__size
 
     def area(self):
         """returns the square area"""
