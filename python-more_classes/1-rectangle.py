@@ -8,9 +8,8 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         """This method constructs the object"""
 
-        if isinstance(width, int) and isinstance(height, int):
-            self.__width = width
-            self.__height = height
+        self.__width = width
+        self.__height = height
 
     @property
     def width(self):
