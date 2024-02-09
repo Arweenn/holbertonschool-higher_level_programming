@@ -6,7 +6,7 @@ class Rectangle:
     """defining a rectangle"""
 
     def __init__(self, width=0, height=0):
-        """This method constructs the object."""
+        """This method constructs the object"""
 
         self.__width = width
         self.__height = height
@@ -27,13 +27,11 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         self.__width = value
 
-
     @property
     def height(self):
         """func defintion"""
 
         return self.__height
-
 
     @height.setter
     def height(self, value):
