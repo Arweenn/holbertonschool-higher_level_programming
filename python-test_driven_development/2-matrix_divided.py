@@ -3,6 +3,7 @@
 
 
 def matrix_divided(matrix, div):
+    """func definition"""
 
     if not isinstance(matrix, list):
         raise TypeError(
