@@ -3,7 +3,7 @@
 
 
 class BaseGeometry:
-    """empty class"""
+    """comment"""
 
     def __init__(self, width, height):
         """comment"""
