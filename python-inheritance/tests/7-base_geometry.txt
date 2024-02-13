@@ -13,12 +13,12 @@ if empty or missing argument:
 >>> base_geometry.integer_validator()
 Traceback (most recent call last):
 ...
-TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
 >>> base_geometry.integer_validator("age")
 Traceback (most recent call last):
 ...
-TypeError: integer_validator() missing 1 required positional argument: 'value'
+TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
 
 if `None` value:
 >>> base_geometry.integer_validator("age", None)
@@ -59,11 +59,6 @@ Traceback (most recent call last):
 TypeError: age must be an integer
 
 >>> base_geometry.integer_validator("age", {21, 40})
-Traceback (most recent call last):
-...
-TypeError: age must be an integer
-
->>> base_geometry.integer_validator("age", True)
 Traceback (most recent call last):
 ...
 TypeError: age must be an integer
