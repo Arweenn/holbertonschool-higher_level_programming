@@ -2,4 +2,5 @@
 
 def lookup(obj):
     """commentaire"""
+
     return dir(obj)
