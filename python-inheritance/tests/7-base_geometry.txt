@@ -62,3 +62,8 @@ TypeError: age must be an integer
 Traceback (most recent call last):
 ...
 TypeError: age must be an integer
+
+>>> base_geometry.integer_validator("age", True)
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
