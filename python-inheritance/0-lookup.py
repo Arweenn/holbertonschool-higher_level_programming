@@ -1,6 +1,7 @@
 #!/usr/bin/python3
+"""comment"""
 
 def lookup(obj):
-    """commentaire"""
+    """comment"""
 
     return dir(obj)
