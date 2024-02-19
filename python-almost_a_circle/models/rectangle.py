@@ -14,33 +14,33 @@ class Rectangle(Base):
         super().__init__(id)
 
     @property
-    def __width(self):
+    def width(self):
         return self.__width
 
-    @__width.setter
-    def __width(self, value):
+    @width.setter
+    def width(self, value):
         self.__width = value
 
     @property
-    def __height(self):
+    def height(self):
         return self.__height
 
-    @__height.setter
-    def __height(self, value):
+    @height.setter
+    def height(self, value):
         self.__height = value
 
     @property
-    def __x(self):
+    def x(self):
         return self.__x
 
-    @__x.setter
-    def __x(self, value):
+    @x.setter
+    def x(self, value):
         self.__x = value
 
     @property
-    def __y(self):
+    def y(self):
         return self.__y
 
-    @__y.setter
-    def __y(self, value):
+    @y.setter
+    def y(self, value):
         self.__y = value
