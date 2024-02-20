@@ -90,7 +90,7 @@ class Rectangle(Base):
         """display a rectangle with the char '#'"""
         for _ in range(self.__y):
             print()
-        print("\n".join(["" * self.__x + "#" * self.__width
+        print("\n".join([" " * self.__x + "#" * self.__width
                          for _ in range(self.__height)]))
 
     def __str__(self):
